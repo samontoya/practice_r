@@ -131,7 +131,8 @@ beijing_pm %>%
   ggplot( mapping= aes(x=sample_time, y=value))+  #this mapping is default can ovveride i
     geom_point()+     #in the geoms right here if add mapping vars tp these
     geom_line()+
-    geom_rug() 
+    geom_rug() +
+    ggtitle("Air Quality")
  
 beijing_pm %>% 
   ggplot(mapping= aes(x=sample_time, y=value))+  
