@@ -19,6 +19,8 @@ beijing_pm <- beijing_pm_raw %>%
                             "Unhealthy", "Very Unhealthy",
                             "Hazardous","Beyond Index")))
 
+head(beijing_pm)
+
 mean(beijing_pm$value) # or for pipeline version look below
 
 beijing_pm %>%
